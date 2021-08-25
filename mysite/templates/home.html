@@ -11,27 +11,38 @@
     
 </head>
 <body>
-    <div class="topnav">
-        <a class="active" href="#home">Projects()</a>
-        <a href="#news">who_is()</a>
-        <a href="#contact">Contact()</a>
-        <a href="#about">About()</a>
-      </div>
+    <nav class="topnav">
+        <ul class = "nav-links">
+            <li>
+                <a href="#who is">who_is()</a>
+            </li>
+            <li>
+                <a href="# about">about()</a>
+            </li>
+            <li>
+                <a href="{% url 'article_0' %}">projects()</a>
+            </li>
+            <li>
+                <a href="{% url 'contact' %}">Contact()</a>
+            </li>
+        </ul>
+        
+    </nav>
+
       <section>
           <div id = "test" class="content">
-              <h2>Proyecto 1</h2>
-              <h3>Subsection</h3>
+              <h1>Proyecto 1</h1>
+              <h2>Subsection</h2>
               <p class = "test_2">Esto es todo lo que he hecho 1.Esto es todo lo que he hecho 1.Esto es todo lo que he hecho 1
                 Esto es todo lo que he hecho 1.Esto es todo lo que he hecho 1.Esto es todo lo que he hecho 1.
                 Esto es todo lo que he hecho 1.Esto es todo lo que he hecho 1.Esto es todo lo que he hecho 1.
-              </p>
-              
+              </p> 
           </div>
       </section>
       <section>
         <div class="content">
-            <h2>Proyecto 2</h2>
-            <h3>Subsection</h3>
+            <h1>Proyecto 2</h1>
+            <h2>Subsection</h2>
             <p>Esto es todo lo que he hecho 2.
                 Esto es todo lo que he hecho 1.Esto es todo lo que he hecho 1.Esto es todo lo que he hecho 1
                 Esto es todo lo que he hecho 1.Esto es todo lo que he hecho 1.Esto es todo lo que he hecho 1.

@@ -23,9 +23,9 @@ from . import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.html_home),
+    path('', views.html_home, name='home'),
     path('projects/', views.html_projects),
-    path('contact/', views.html_contact),
+    path('contact/', views.html_contact, name='contact'),
     #url(r'^test/',include('blog.urls'))
     path('article/',include('blog.urls')),
     #path('home/',include('blog.urls')),
