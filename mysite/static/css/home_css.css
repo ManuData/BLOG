@@ -1,0 +1,46 @@
+
+body{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+    color:black;
+     
+}
+
+
+nav{
+  display:flex;
+  justify-content: space-around;
+  align-items:center;
+  min-height: 8vh;
+  background-color: magenta;
+}
+
+.nav-links{
+  display:flex;
+  justify-content: space-around;
+  width: 35%;
+  
+}
+.nav-links li{
+  list-style: none;
+}
+
+
+p {
+    animation-duration: 3s;
+    animation-name: slidein;
+  }
+  
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
