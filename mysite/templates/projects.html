@@ -1,19 +1,40 @@
+
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href= "{% static 'css/home_css.css' %}">
     <title>Document</title>
 </head>
 <body>
-    <div class="topnav">
-        <a class="active" href="#home">Projects()</a>
-        <a href="#news">who_is()</a>
-        <a href="#contact">Contact()</a>
-        <a href="#about">About()</a>
-      </div>
-    <span>projects</span>
+    <nav class="topnav">
+        <ul class = "nav-links">
+            <li>
+                <a href="{% url 'home' %}">who_is()</a>
+            </li>
+            <li>
+                <a href="{% url 'projects' %}">projects()</a>
+            </li>
+            <li>
+                <a href="{% url 'contact' %}">Contact()</a>
+            </li>
+        </ul>
+        
+    </nav>
+    <div>
+        <h1 style="text-align: center;">'PROJECTS'</h1>
+        <p style="text-align: center;"> 
+          
+          PROJECTS  PROJECTS  PROJECTS  PROJECTS  PROJECTS 
+          PROJECTS  PROJECTS  PROJECTS  PROJECTS  PROJECTS 
+          PROJECTS  PROJECTS  PROJECTS  PROJECTS  PROJECTS 
+
+        </p>
+    </div>
+    
     
 </body>
 </html>

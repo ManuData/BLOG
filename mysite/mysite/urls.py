@@ -19,7 +19,8 @@ from django.conf.urls import url, include
 from . import views
 
 
-
+# El parámetro "name" dentro de la función path sirve para importar las url dentro del html con la siguiente
+# sintaxis: "{% url 'contact' %}"
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -27,7 +28,7 @@ urlpatterns = [
     path('projects/', views.html_projects,name = 'projects'),
     path('contact/', views.html_contact, name='contact'),
     #url(r'^test/',include('blog.urls'))
-    path('article/',include('blog.urls')),
+    path('blog/',include('blog.urls')),
     #path('home/',include('blog.urls')),
 
 ]
