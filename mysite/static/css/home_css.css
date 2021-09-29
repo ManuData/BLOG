@@ -5,6 +5,11 @@ body{
     box-sizing: border-box;
     font-family: 'Roboto Mono', monospace;
     color:black;
+    background:url("/static/images/test.jpeg")50% 0 no-repeat fixed;
+    background-size: 900px 1000px;
+    padding: 100px 0 0 0;
+    
+    
     
      
 }
@@ -16,6 +21,9 @@ nav{
   align-items:center;
   min-height: 8vh;
   background-color: magenta;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 700;
+
 }
 
 .nav-links{
