@@ -5,15 +5,12 @@ body{
     box-sizing: border-box;
     font-family: 'Roboto Mono', monospace;
     color:black;
-    background:url("/static/images/test.jpeg")50% 0 no-repeat fixed;
+    /*background:url("/static/images/test_2.jpeg")50% 0 no-repeat fixed;
     background-size: 900px 1000px;
-    padding: 100px 0 0 0;
+    padding: 100px 0 0 0;*/
     
-    
-    
-     
+      
 }
-
 
 nav{
   display:flex;
@@ -35,6 +32,17 @@ nav{
 .nav-links li{
   list-style: none;
 }
+
+
+/* IMAGEN: Voy a incluir una imagen en un elemento en específico*/
+
+#bg{
+  background-size: 1800px 900px;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-attachment: fixed;
+}
+
 
 
 p {
