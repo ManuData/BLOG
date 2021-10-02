@@ -4,7 +4,7 @@ body{
     padding: 0px;
     box-sizing: border-box;
     font-family: 'Roboto Mono', monospace;
-    color:black;
+    color:white;
     /*background:url("/static/images/test_2.jpeg")50% 0 no-repeat fixed;
     background-size: 900px 1000px;
     padding: 100px 0 0 0;*/
@@ -17,9 +17,9 @@ nav{
   justify-content: space-around;
   align-items:center;
   min-height: 8vh;
-  background-color: magenta;
+  background-color: transparent;
   font-family: 'Roboto Mono', monospace;
-  font-weight: 700;
+  font-weight: 700; 
 
 }
 
@@ -28,11 +28,18 @@ nav{
   justify-content: space-around;
   width: 35%;
   
+  
+  
 }
 .nav-links li{
   list-style: none;
+  
 }
 
+.nav-links li a {
+  text-decoration: none;
+  color:yellow;
+}
 
 /* IMAGEN: Voy a incluir una imagen en un elemento en específico*/
 
