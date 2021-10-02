@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <script src= "{% static 'scripts/jquery.js' %}" type = "text/javascript"></script> 
     <script src= "{% static 'scripts/menu_hamburguesa.js' %}" type = "text/javascript"></script> 
 
     <title>Document</title>
@@ -51,6 +52,13 @@
 
           </p>
       </div>
- 
+ <script>
+    const toggleButton = document.getElementsByClassName('toggle-button')[0]
+    const navbarLinks = document.getElementsByClassName('nav-links')[0]
+    toggleButton.addEventListener('click',() => {
+        navbarLinks.classList.toggle('active');
+    
+})
+ </script>
 </body>
 </html>
