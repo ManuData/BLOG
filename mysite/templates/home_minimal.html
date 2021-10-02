@@ -11,11 +11,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link src = "{% static 'scripts/menu_hamburguesa.js' %}">
+
     <title>Document</title>
     
 </head>
 <body id="bg" style="background-image: url('{% static "images/test_2.jpg"%}')";> 
     <nav class="topnav">
+
+        <a href = "#" class = "toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
         <ul class = "nav-links">
             <li>
                 <a href="{% url 'home' %}">who_is()</a>

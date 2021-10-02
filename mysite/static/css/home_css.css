@@ -4,12 +4,11 @@ body{
     padding: 0px;
     box-sizing: border-box;
     font-family: 'Roboto Mono', monospace;
-    color:white;
+    color:black;
     /*background:url("/static/images/test_2.jpeg")50% 0 no-repeat fixed;
     background-size: 900px 1000px;
     padding: 100px 0 0 0;*/
-    
-      
+        
 }
 
 nav{
@@ -26,11 +25,10 @@ nav{
 .nav-links{
   display:flex;
   justify-content: space-around;
-  width: 35%;
-  
-  
-  
+  width: 50%;
+   
 }
+
 .nav-links li{
   list-style: none;
   
@@ -41,6 +39,75 @@ nav{
   color:yellow;
 }
 
+/* MENÚ HAMBURGUESA*/
+
+.toggle-button{
+  position: absolute;
+  top: .75rem;
+  right:1rem;
+  display:flex;
+  flex-direction:column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+  display:none;
+}
+.toggle-button .bar{
+  width: 30px;
+  height: 21px;
+  background-color: yellow;
+  border-radius: 10px;
+}
+
+@media(max-width:400px){
+  .toggle-button{
+    display: flex;
+  }
+
+  .nav-links{
+    display:none;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+
+  }
+
+  .navbar{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links ul{
+    width: 100%;
+    flex-direction: column;
+
+  }
+
+
+  .nav-links li{
+    flex-direction: column;
+    width: 100%;
+    text-align: right;
+  }
+
+  .nav-links li a{
+    padding: .5rem 1rem;
+    margin: 0;
+  
+    
+  
+  }
+
+  .nav-links.active{
+
+    display: flex;
+  }
+
+}
+
+
+
+
 /* IMAGEN: Voy a incluir una imagen en un elemento en específico*/
 
 #bg{
@@ -49,6 +116,7 @@ nav{
   background-position: top;
   background-attachment: fixed;
 }
+
 
 
 
