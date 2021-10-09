@@ -1,4 +1,3 @@
-
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
@@ -17,6 +16,7 @@
     <title>Document</title>
     
 </head>
+<!-- Tags para incluir la imagen de fondo-->
 <body id="bg" style="background-image: url('{% static "images/test_2.jpg"%}')";> 
     <nav class="topnav">
 
@@ -36,15 +36,15 @@
                 <a href="{% url 'contact' %}">Contact()</a>
             </li>
             <li>
-                <i style="font-size:26px" class="fa"> <a href ="https://github.com/ManuData"  target="_blank" style="text-decoration:none"> &#xf09b;</i></a> 
+                <i id= "git_hub_logo" class="fa"> <a href ="https://github.com/ManuData"  target="_blank"> &#xf09b;</i></a> 
             </li>
         </ul>
         
     </nav>
 
       <div>
-          <h1 style="text-align: center;">'HELLO HUMAN'</h1>
-          <p style="text-align: center;"> 
+          <h1>'HELLO HUMAN'</h1>
+          <p> 
             
             Esto es la introducción de la gente que viene a mi blog<br>
             y quiero que esté centrado apra que tenga un ejemplo clean 
@@ -59,6 +59,6 @@
         navbarLinks.classList.toggle('active');
     
 })
- </script>
+</script>
 </body>
 </html>

@@ -45,7 +45,6 @@ nav{
 }
 
 
-
 /* MENÚ HAMBURGUESA*/
 
 .toggle-button{
@@ -116,8 +115,6 @@ nav{
 }
 
 
-
-
 /* IMAGEN: Voy a incluir una imagen en un elemento en específico*/
 
 #bg{
@@ -127,12 +124,16 @@ nav{
   background-attachment: fixed;
 }
 
-
-
+/*Git hub logo*/
+#git_hub_logo{
+  font-size:26px;
+  text-decoration:none;
+}
 
 p {
     animation-duration: 3s;
     animation-name: slidein;
+    text-align: center;
   }
   
   @keyframes slidein {
@@ -145,4 +146,10 @@ p {
       margin-left: 0%;
       width: 100%;
     }
+  }
+
+
+  h1{
+
+  text-align: center;
   }
