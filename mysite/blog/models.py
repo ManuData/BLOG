@@ -5,7 +5,7 @@ from django.db.models.fields import DateField, SlugField
 
 class Article(models.Model):
     title = models.CharField(max_length=100)
-    # Es la dirección del artículo
+    # Es la url del artículo separada por guiones | "hyphen"
     slug = models.SlugField()
     body = models.CharField(max_length=1500)
     date = models.DateTimeField(auto_now_add = True)
