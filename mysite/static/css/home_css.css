@@ -70,6 +70,18 @@ nav{
     display: flex;
   }
 
+  .topnav{
+    align-items: flex-end;
+    justify-content: flex-end;
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: right;
+    z-index: 9999;
+  
+
+  }
+
   .nav-links{
     display:none;
     flex-direction: column;
@@ -83,6 +95,8 @@ nav{
     flex-direction: column;
     align-items: flex-start;
   }
+
+  
 
   .nav-links ul{
     width: 100%;
@@ -111,6 +125,15 @@ nav{
 
     display: flex;
   }
+
+  h1{
+
+    text-align: center;
+    height: 100px;
+    line-height: 100px;
+    bottom:0;
+    margin-top: 50%;
+    }
 
 }
 
@@ -150,6 +173,5 @@ p {
 
 
   h1{
-
-  text-align: center;
+    text-align: center;
   }
