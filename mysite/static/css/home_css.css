@@ -66,8 +66,10 @@ nav{
 }
 
 @media(max-width:400px){
+
   .toggle-button{
     display: flex;
+    z-index: 9999;
   }
 
   .topnav{
@@ -87,7 +89,7 @@ nav{
     flex-direction: column;
     align-items: flex-start;
     width: 100%;
-    padding-top:30px;
+    padding-top:420px;
 
   }
 
@@ -116,15 +118,31 @@ nav{
     padding: .5rem 1rem;
     margin: 0;
     display:inline-block;
+    font-size: 2rem; /*Para modificar el tamaño del menú*/
+  }
   
+  .nav-links.active{
+
+    display: flex;
+    animation: fadein 2s;
+    /*backdrop-filter: blur(1.75px);*/
     
   
   }
 
-  .nav-links.active{
+  @keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+  
+#bg.active{
 
-    display: flex;
-  }
+/*Todavía no consigo que haga blur en todo*/  
+  
+  
+}
+
+
 
   h1{
 

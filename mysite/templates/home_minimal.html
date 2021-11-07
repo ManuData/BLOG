@@ -17,7 +17,10 @@
     
 </head>
 <!-- Tags para incluir la imagen de fondo-->
-<body id="bg" style="background-image: url('{% static "images/test_2.jpg"%}')";> 
+<body id="bg"  style="background-image: url('{% static "images/test_2.jpg"%}')";> 
+    
+
+    
     <nav class="topnav">
 
         <a href = "#" class = "toggle-button">
@@ -55,10 +58,12 @@
  <script>
     const toggleButton = document.getElementsByClassName('toggle-button')[0]
     const navbarLinks = document.getElementsByClassName('nav-links')[0]
+    const image_background = document.getElementById('bg')
     toggleButton.addEventListener('click',() => {
         navbarLinks.classList.toggle('active');
-    
-})
+        image_background.classList.toggle('active');
+
+    })
 </script>
 </body>
 </html>
