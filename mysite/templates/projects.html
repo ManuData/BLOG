@@ -1,37 +1,15 @@
-
+{%extends "base_html.html"%}
 {% load static %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href= "{% static 'css/home_css.css' %}">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
-    <title>Document</title>
-</head>
-<body>
-    <nav class="topnav">
-        <ul class = "nav-links">
-            <li>
-                <a href="{% url 'home' %}" style = "text-decoration:none">who_is()</a>
-            </li>
-            <li>
-                <a href="{% url 'projects' %}" style = "text-decoration:none">projects()</a>
-            </li>
-            <li>
-                <a href="{% url 'contact' %}" style = "text-decoration:none">Contact()</a>
-            </li>
-            <li>
-                <i style="font-size:26px" class="fa"> <a href ="https://github.com/ManuData"  target="_blank" style="text-decoration:none"> &#xf09b;</i></a> 
-            </li>
-        </ul>
-        
-    </nav>
+
+{% block background-image %} id="bg"  style="background-image: url('{% static "images/test_2.jpg"%}')";{% endblock %}
+
+
+
+    {%block content%}
+   
     <div>
+        
+          
         <h1 style="text-align: center;">'PROJECTS'</h1>
         <p style="text-align: center;"> 
           
@@ -41,7 +19,8 @@
 
         </p>
     </div>
+    {%endblock%}
+   
     
     
-</body>
-</html>
+
