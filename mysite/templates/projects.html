@@ -6,7 +6,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href= "{% static 'css/home_css.css' %}">
+    <!--<link rel="stylesheet" href= "{% static 'css/home_css.css' %}">-->
+   <link rel="stylesheet" href= "{% static 'css/cards.css' %}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,15 +32,27 @@
         </ul>
         
     </nav>
-    <div>
-        <h1 style="text-align: center;">'PROJECTS'</h1>
-        <p style="text-align: center;"> 
-          
-          PROJECTS  PROJECTS  PROJECTS  PROJECTS  PROJECTS 
-          PROJECTS  PROJECTS  PROJECTS  PROJECTS  PROJECTS 
-          PROJECTS  PROJECTS  PROJECTS  PROJECTS  PROJECTS 
-
-        </p>
+    <div class = "grid">
+        <div class = "grid-item">
+            <div class = "card">
+                <img class = "card-img" src = "{% static 'images/test_2.jpg' %}">
+                <div class = "card-content">
+                    <h1 class = "card-header"> TEST</h1>
+                    <p class = "card-text"> Hola que ase esto es un test </p>
+                    <button class = "card-btn">Visit</button>
+                </div>
+            </div>
+        </div>
+        <div class = "grid-item">
+            <div class = "card">
+                <img class = "card-img" src = "{% static 'images/test.jpeg' %}">
+                <div class = "card-content">
+                    <h1 class = "card-header"> ME IN HONG KONG</h1>
+                    <p class = "card-text"> Hola que ase esto es una foto mía </p>
+                    <button class = "card-btn">Visit</button>
+                </div>
+            </div>
+        </div>
     </div>
     
     
