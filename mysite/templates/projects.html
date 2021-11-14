@@ -8,7 +8,7 @@ Tags para incluir la imagen de fondo{% block background-image %} id="paisaje"  s
     {%block content%}
    
     <div>
-      <img src="{% static 'images/hk_car.jpg' %}" width="100" height="150">
+      <!-- <img src="{% static 'images/hk_car.jpg' %}" width="100" height="150"> -->
           
         <h1 style="text-align: center;">'PROJECTS'</h1>
         <p style="text-align: center;"> 
@@ -19,18 +19,31 @@ Tags para incluir la imagen de fondo{% block background-image %} id="paisaje"  s
 
         </p>
 
-       
+        <article class="film_review" style="text-align: center;">
+          <h2> # Data Anaytics consultant</h2>
+          <section class="main_review" style="text-align: center;">
+            <h3 style="text-align: center;">Review</h3>
+            <p>Main tasks where: </p>
+            -Data Layer Audit <br>
+            -Analysis of the digital assets
+          </section>
+          <section class="user_reviews">
+            <h3>User reviews</h3>
+            <article class="user_review">
+              <h4>Too scary!</h4>
+              <p>Way too scary for me.</p>
+              <footer>
+                <p>
+                  Posted on
+                  <time datetime="2015-05-16 19:00">May 16</time>
+                  by Lisa.
+                </p>
+              </footer>
+        </article>
+
 
 
       
-
-
-
-
-
-
-
-
 
     </div>
     {%endblock%}

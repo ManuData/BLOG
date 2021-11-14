@@ -160,6 +160,7 @@ nav{
   h1{
 
     text-align: center;
+    font-size: 4rem;
     height: 100px;
     line-height: 100px;
     bottom:0;
@@ -179,6 +180,7 @@ nav{
   text-decoration:none;
 }
 
+/*NOTA: añadir una clase a los elementos "p" del index para incorporar los efectos y que no se aplique a todos*/
 p {
     animation-duration: 3s;
     animation-name: slidein;
@@ -202,6 +204,8 @@ p {
   h1{
     text-align: center;
     color:white;
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight:700px;
   }
+
+ 
