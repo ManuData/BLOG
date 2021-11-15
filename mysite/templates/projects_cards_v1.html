@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--<link rel="stylesheet" href= "{% static 'css/home_css.css' %}">-->
-   <link rel="stylesheet" href= "{% static 'css/cards_v3.css' %}">
+   <link rel="stylesheet" href= "{% static 'css/cards.css' %}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -34,41 +34,28 @@
             
         </nav>
     
-        <div class = "container">
-
-            <div class="box">
-                <img src = "{% static 'images/test.jpeg' %}" alt="Avatar" style="width:100%" class = "card-img">
-                <div class="container-text">
-                  <h1 class = "card-header"><b> << John Doe >> </b></h1> 
-                  <p class = "card-text">El viaje a Hong Kong es increíble ya que me ha podido permitir conocer nuevas</p> 
+    <div class = "grid">
+        <div class = "grid-item">
+            <div class = "card">
+                <img class = "card-img" src = "{% static 'images/test_2.jpg' %}">
+                <div class = "card-content">
+                    <h1 class = "card-header"> TEST</h1>
+                    <p class = "card-text"> Hola que ase esto es un test </p>
+                    <button class = "card-btn">Visit</button>
                 </div>
-              </div>
-
-            <div class="box">
-                <img src = "{% static 'images/test_2.jpg' %}" alt="Avatar" style="width:100%" class = "card-img">
-                <div class="container-text">
-                  <h1 class = "card-header"><b> "Hong Kong" </b></h1> 
-                  <p class = "card-text">El viaje a Hong Kong es increíble ya que me ha podido permitir conocer nuevas </p> 
-                </div>
-              </div>
-
-              <div class="box">
-                <img src = "{% static 'images/test_2.jpg' %}" alt="Avatar" style="width:100%" class = "card-img">
-                <div class="container-text">
-                  <h1 class = "card-header"><b> "Hong Kong" </b></h1> 
-                  <p class = "card-text">El viaje a Hong Kong es increíble ya que me ha podido permitir conocer nuevas </p> 
-                </div>
-              </div>
-
-
+            </div>
         </div>
-
-        
-
-
-       
-
-        
+        <div class = "grid-item">
+            <div class = "card">
+                <img class = "card-img" src = "{% static 'images/test.jpeg' %}">
+                <div class = "card-content">
+                    <h1 class = "card-header"> ME IN HONG KONG</h1>
+                    <p class = "card-text"> Hola que ase esto es una foto mía </p>
+                    <button class = "card-btn">Visit</button>
+                </div>
+            </div>
+        </div>
+    </div>
     
     
 </body>
