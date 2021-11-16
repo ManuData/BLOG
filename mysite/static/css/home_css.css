@@ -1,13 +1,4 @@
 
-body{
-    margin:0px;
-    padding: 0px;
-    box-sizing: border-box;
-    font-family: 'Roboto Mono', monospace;
-    color:black;
-    
-   
-}
 
 #bg{
   background-size: 1800px 900px;
@@ -16,196 +7,29 @@ body{
   background-attachment: fixed;
 }
 
-#paisaje{
-  background-size: 1450px 750px;
-  background-repeat: no-repeat;
-  background-position: top;
-  background-attachment: fixed;
-}
-
-nav{
-  display:flex;
-  justify-content: space-around;
-  align-items:center;
-  min-height: 8vh;
-  background-color: transparent;
-  font-family: 'Roboto Mono', monospace;
-  font-weight: 700; 
-
-}
-
-.nav-links{
-  display:flex;
-  justify-content: space-around;
-  width: 50%;
-   
-}
-
-.nav-links li{
-  list-style: none;
-  
-}
-
-.nav-links li a {
-  text-decoration: none;
-  color:yellow;
-}
-
-.nav-links li a:hover {
-  color:blue;
-  transition: 0.5s;
-}
-
-
-/* MENÚ HAMBURGUESA*/
-
-.toggle-button{
-  position: absolute;
-  top: .75rem;
-  right:1rem;
-  display:flex;
-  flex-direction:column;
-  justify-content: space-between;
-  width: 30px;
-  height: 21px;
-  display:none;
-}
-.toggle-button .bar{
-  width: 30px;
-  height: 21px;
-  background-color: yellow;
-  border-radius: 10px;
-}
-
-@media(max-width:400px){
-
-
-  .toggle-button{
-    display: flex;
-    z-index: 9999;
-  
-  }
-
-  .topnav{
-    align-items: flex-end;
-    justify-content: flex-end;
-    position: absolute;
-    top: 0;
-    right: 0;
-    text-align: right;
-    z-index: 9999;
-  
-
-  }
-
-  .nav-links{
-    display:none;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 100%;
-    padding-top:420px;
-
-  }
-
-  .navbar{
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  
-
-  .nav-links ul{
-    width: 100%;
-    flex-direction: column;
-
-  }
-
-
-  .nav-links li{
-    flex-direction: column;
-    width: 100%;
-    text-align: right;
-    
-  }
-
-  .nav-links li a{
-    padding: .5rem 1rem;
-    margin: 0;
-    display:inline-block;
-    font-size: 2rem; /*Para modificar el tamaño del menú*/
-  }
-  
-  .nav-links.active{
-
-    display: flex;
-    animation: fadein 2s;
-    /*backdrop-filter: blur(1.75px);*/
-    
-    
-  }
-
-  @keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-#bg.active{
- 
-  position: fixed;
-  backdrop-filter: blur(1.75px);
-  height: 100vh;
-}
-
-
-  h1{
-
-    text-align: center;
-    font-size: 4rem;
-    height: 100px;
-    line-height: 100px;
-    bottom:0;
-    margin-top: 50%;
-    }
-
-}
-
-
-/* IMAGEN: Voy a incluir una imagen en un elemento en específico*/
-
-
-
-/*Git hub logo*/
-#git_hub_logo{
-  font-size:26px;
-  text-decoration:none;
-}
-
-/*NOTA: añadir una clase a los elementos "p" del index para incorporar los efectos y que no se aplique a todos*/
 p {
-    animation-duration: 3s;
-    animation-name: slidein;
-    text-align: center;
-    color: white;
-  }
-  
-  @keyframes slidein {
-    from {
-      margin-left: 100%;
-      width: 300%;
-    }
-  
-    to {
-      margin-left: 0%;
-      width: 100%;
-    }
+  animation-duration: 3s;
+  animation-name: slidein;
+  text-align: center;
+  color: white;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
   }
 
-
-  h1{
-    text-align: center;
-    color:white;
-    font-size: 2rem;
-    font-weight:700px;
+  to {
+    margin-left: 0%;
+    width: 100%;
   }
+}
 
- 
+
+h1{
+  text-align: center;
+  color:white;
+  font-size: 2rem;
+  font-weight:700px;
+}

@@ -1,72 +1,26 @@
-
+{%extends "base_html.html"%}
 {% load static %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href= "{% static 'css/style.css' %}">
-    <title>Document</title>
-    
-</head>
-<body>
-    <nav class="topnav">
-        <ul class = "nav-links">
-            <li>
-                <a href="#who is">who_is()</a>
-            </li>
-            <li>
-                <a href="# about">about()</a>
-            </li>
-            <li>
-                <a href="{% url 'article_0' %}">projects()</a>
-            </li>
-            <li>
-                <a href="{% url 'contact' %}">Contact()</a>
-            </li>
-        </ul>
-        
-    </nav>
 
-      <section>
-          <div id = "test" class="content">
-              <h1>Proyecto 1</h1>
-              <h2>Subsection</h2>
-              <p class = "test_2">Esto es todo lo que he hecho 1.Esto es todo lo que he hecho 1.Esto es todo lo que he hecho 1
-                Esto es todo lo que he hecho 1.Esto es todo lo que he hecho 1.Esto es todo lo que he hecho 1.
-                Esto es todo lo que he hecho 1.Esto es todo lo que he hecho 1.Esto es todo lo que he hecho 1.
-              </p> 
-          </div>
-      </section>
-      <section>
-        <div class="content">
-            <h1>Proyecto 2</h1>
-            <h2>Subsection</h2>
-            <p>Esto es todo lo que he hecho 2.
-                Esto es todo lo que he hecho 1.Esto es todo lo que he hecho 1.Esto es todo lo que he hecho 1
-                Esto es todo lo que he hecho 1.Esto es todo lo que he hecho 1.Esto es todo lo que he hecho 1.
-                Esto es todo lo que he hecho 1.Esto es todo lo que he hecho 1.Esto es todo lo que he hecho 1.
-                Esto es todo lo que he hecho 1.Esto es todo lo que he hecho 1.Esto es todo lo que he hecho 1
-                Esto es todo lo que he hecho 1.Esto es todo lo que he hecho 1.Esto es todo lo que he hecho 1.
-                Esto es todo lo que he hecho 1.Esto es todo lo que he hecho 1.Esto es todo lo que he hecho 1.
-            </p>
-        </div>
-    </section>
-    </section>
-      <section>
-        <div class="content">
-            <h2>Proyecto 3</h2>
-            <h3>Subsection</h3>
-            <p>Esto es todo lo que he hecho 3
-                Esto es todo lo que he hecho 1.Esto es todo lo que he hecho 1.Esto es todo lo que he hecho 1
-                Esto es todo lo que he hecho 1.Esto es todo lo que he hecho 1.Esto es todo lo que he hecho 1.
-                Esto es todo lo que he hecho 1.Esto es todo lo que he hecho 1.Esto es todo lo que he hecho 1.Esto es todo lo que he hecho 1.Esto es todo lo que he hecho 1.Esto es todo lo que he hecho 1
-                Esto es todo lo que he hecho 1.Esto es todo lo que he hecho 1.Esto es todo lo que he hecho 1.
-                Esto es todo lo que he hecho 1.Esto es todo lo que he hecho 1.Esto es todo lo que he hecho 1.
-            </p>
-        </div>
-    </section>
- 
-</body>
-</html>
+
+<!-- NOTA: Tengo que incluir también tags específicos para la gestión específica del css-->
+
+<{% block header-pageCss %} href= "{% static 'css/home_css.css' %}" {% endblock %} >
+
+
+<!--Tags para incluir la imagen de fondo-->
+{% block background-image %} id="bg"  style="background-image: url('{% static "images/test_2.jpg"%}')";{% endblock %} 
+    
+{%block content%}
+
+      <div>
+          <h1>'HELLO HUMAN'</h1>
+          <p> 
+            
+            Esto es la introducción de la gente que viene a mi blog<br>
+            y quiero que esté centrado apra que tenga un ejemplo clean 
+            y chulo.
+
+          </p>
+      </div>
+{%endblock%}
+
