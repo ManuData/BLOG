@@ -1,0 +1,98 @@
+
+  /*PARTE DE LOS DIVS BOX*/
+
+.container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.container {
+   padding: 2px 8px;
+   /*padding: 1rem;*/
+   object-fit: cover;
+  }
+
+
+.card-img{
+    display:block;
+    width: 100%;
+    height:20rem;
+    object-fit: cover;
+}
+
+.card-header{
+    font-size: 1rem;
+    font-weight: 200;
+    color: #0d0d0d;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    
+
+}
+
+.card-text{
+    font-size: 0.6rem;
+    letter-spacing: 0.1rem;
+    line-height: 1;
+    color: #3d3d3d;
+    margin-bottom:2.5rem;
+    padding:1px;
+    margin-top: -5px;
+    background-color:azure;
+    padding-left: 7px;
+
+}
+
+
+.box{
+    width: 200px;
+    height: 300px;
+    margin:40px; 
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+
+}
+.box:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    transform:translateY(-0.8%);
+  }
+
+
+  .btn-blue{
+    position: relative;
+    border:2px solid a;
+    color:white;
+    outline: 0;
+    border: 0;
+    background:none;
+    margin:1px;
+    /*padding: 5px 15px;*/
+    padding:3px;
+    font-size:10px;
+    cursor:pointer;
+    border-radius:20px;
+    background-color: blue;
+    float: right;
+  }
+
+@media only screen and (max-width:60em){
+    
+    .card-img{
+        display:block;
+        width: 100%;
+        height:10rem;
+        object-fit: cover;
+    }
+    .card-text{
+        background-color: white;
+    }
+
+}
+
+
