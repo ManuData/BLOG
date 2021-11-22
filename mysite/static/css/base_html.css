@@ -68,8 +68,15 @@ nav{
   border-radius: 10px;
 }
 
+
+
+
 @media(max-width:400px){
 
+  /* Bloquear el scroll cuando el menú responsive está activo*/
+  /*.fixed-position{
+    position:fixed;
+}*/
 
   .toggle-button{
     display: flex;
