@@ -60,11 +60,9 @@
             navbarLinks.classList.toggle('active');
             image_background.classList.toggle('active');
             if ($(navbarLinks).is(':visible')) {
-                console.log("está activo el menu");
                 $('body').addClass("fixed-position");
             } else {
             $('body').removeClass("fixed-position");
-            console.log("ya no está activo");
             }
         })
         

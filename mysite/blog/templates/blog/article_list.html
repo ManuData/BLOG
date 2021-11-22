@@ -18,6 +18,25 @@
         <p>{{article.title}}</p>
     </div>
     {%endfor%}
+
+    {%for number in numbers%}
+    <div>
+        <p>{{number}}</p>
+    </div>
+
+    {%endfor%}
+
+<script>
+    var test_json = {
+
+        'products':[{% for number in numbers %} {
+            'id': '{{number}}'},{% endfor %}]
+        
+    };
+
+    var obj = {{obj_as_json | safe}};
+
     
+</script>
 </body>
 </html>

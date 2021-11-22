@@ -10,7 +10,7 @@ class Article(models.Model):
     body = models.CharField(max_length=1500)
     date = models.DateTimeField(auto_now_add = True)
 
-    # Add in thumbnail later
+    # Add in thumbnail later // Para gestionar media images dentro del admin
     # Add in author later
 
 def __str__(self):

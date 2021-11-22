@@ -1,5 +1,12 @@
 from django.shortcuts import render
 from .models import Article
+import pandas as pd
+import numpy as np
+import json
+
+test_datos = [0,1,2,30,34,21]
+serie = pd.Series(test_datos,name="test")
+obj = {'test1':1,'test2':2}
 
 # funciones de prueba de artículos: 
 
@@ -15,4 +22,6 @@ def html_article_1(request):
 
 def html_article_list(request):
     articles = Article.objects.all()
-    return render(request,'blog/article_list.html',{'articles':articles})   
+    return render(request,'blog/article_list.html',{'articles':articles,'numbers':serie,"obj_as_json":json.dumps(obj)})  
+     
+
