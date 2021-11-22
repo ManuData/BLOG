@@ -8,7 +8,7 @@
 - deactivate
 
 2. He generado un archivo local de git
-Git init
+Git inita
 
 2.1 He aplicado el siguiente comando:
 - echo 'env' > .gitignore (para poder ignorar de las subidas las carpetas del entorno virtual)
