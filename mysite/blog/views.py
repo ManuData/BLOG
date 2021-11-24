@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from django.http import HttpResponse
 from .models import Article
 import pandas as pd
 import numpy as np
@@ -22,6 +23,11 @@ def html_article_1(request):
 
 def html_article_list(request):
     articles = Article.objects.all()
-    return render(request,'blog/article_list.html',{'articles':articles,'numbers':serie,"obj_as_json":json.dumps(obj)})  
+    response = render(request,'blog/article_list.html',{'articles':articles,'numbers':serie,"obj_as_json":json.dumps(obj)})  
+    response.set_cookie('TEST', 'PUTO AMO !!')
+    return resp
      
-
+# Función para la lista de artículos sin meter cookies.
+#def html_article_list(request):
+    #articles = Article.objects.all()
+    #return render(request,'blog/article_list.html',{'articles':articles,'numbers':serie,"obj_as_json":json.dumps(obj)}) 
