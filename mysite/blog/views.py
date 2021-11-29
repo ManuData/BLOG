@@ -25,7 +25,7 @@ def html_article_list(request):
     articles = Article.objects.all()
     response = render(request,'blog/article_list.html',{'articles':articles,'numbers':serie,"obj_as_json":json.dumps(obj)})  
     response.set_cookie('TEST', 'PUTO AMO !!')
-    return resp
+    return response
      
 # Función para la lista de artículos sin meter cookies.
 #def html_article_list(request):
