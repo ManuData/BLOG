@@ -1,6 +1,19 @@
 
   /*PARTE DE LOS DIVS BOX*/
 
+ /*Bloque para modificar la parte del base_html.css*/
+
+  .nav-links li a {
+    text-decoration: none;
+    color:black !important;
+  }
+  .nav-links li a:hover {
+    color:blue !important;
+    transition: 0.5s;
+  }
+
+ /*fin*/
+
 .container{
     width: 100%;
     height: auto;

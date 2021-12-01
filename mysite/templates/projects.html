@@ -10,7 +10,7 @@
 
 
 <!--Tags para incluir la imagen de fondo-->
-{% block background-image %} id="bg"  style="background-image: url('{% static "images/wallpaper.jpeg"%}')";{% endblock %} 
+{% block background-image %} id="bg"  style="background-image: url('{% static "images/wallpaper.jpg"%}')";{% endblock %} 
     
 {%block content%}
 
@@ -19,7 +19,7 @@
   <div class="box">
       <img src = "{% static 'images/bmind_2.jpeg' %}" alt="Avatar" style="width:100%" class = "card-img">
       <div class="container-text">
-        <h1 class = "card-header"><b> << John Doe >> </b></h1> 
+        <h1 class = "card-header"><b> "Bmind - Madrid" </b></h1> 
         <p class = "card-text">El viaje a Hong Kong es increíble ya que me ha podido permitir conocer nuevas</p>
         <button class="btn-blue">detalles</button> 
       </div>
@@ -28,7 +28,7 @@
   <div class="box">
       <img src = "{% static 'images/knauf.jpeg' %}" alt="Avatar" style="width:100%" class = "card-img">
       <div class="container-text">
-        <h1 class = "card-header"><b> "Hong Kong" </b></h1> 
+        <h1 class = "card-header"><b> "Knauf - Munich" </b></h1> 
         <p class = "card-text">El viaje a Hong Kong es increíble ya que me ha podido permitir conocer nuevas </p> 
         <button class = "btn-blue">detalles</button>
       </div>
@@ -37,7 +37,7 @@
     <div class="box">
       <img src = "{% static 'images/vicario_socks.jpg' %}" alt="Avatar" style="width:100%" class = "card-img">
       <div class="container-text">
-        <h1 class = "card-header"><b> "Hong Kong" </b></h1> 
+        <h1 class = "card-header"><b> "VicarioBrand" </b></h1> 
         <p class = "card-text">El viaje a Hong Kong es increíble ya que me ha podido permitir conocer nuevas </p> 
         <button class= "btn-blue" onclick="location.href='{% url 'home' %}'"
         > detalles </button>
