@@ -26,6 +26,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.html_home, name='home'),
     path('projects/', views.html_projects,name = 'projects'),
+    path('projects/bmind', views.html_project_bmind,name = 'project_bmind'),
     path('contact/', views.html_contact, name='contact'),
     #url(r'^test/',include('blog.urls'))
     path('blog/',include('blog.urls')),

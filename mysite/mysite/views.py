@@ -13,3 +13,6 @@ def html_contact(request):
 
 def html_projects(request):
     return render(request,'projects.html')
+
+def html_project_bmind(request):
+    return render(request,'project_bmind.html')
