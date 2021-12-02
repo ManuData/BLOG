@@ -2,6 +2,11 @@
   /*PARTE DE LOS DIVS BOX*/
 
  /*Bloque para modificar la parte del base_html.css*/
+ body{
+  background-color: #f9f7f1 !important
+ }
+
+
 
   .nav-links li a {
     text-decoration: none;
