@@ -14,7 +14,7 @@
 
     {%block header-links%}
     {% endblock %}
-    
+
     <link rel="stylesheet" {% block header-pageCss %}{% endblock %}>
     <script src= "{% static 'scripts/jquery.js' %}" type = "text/javascript"></script> 
     <script src= "{% static 'scripts/menu_hamburguesa.js' %}" type = "text/javascript"></script> 
@@ -60,6 +60,7 @@
         const toggleButton = document.getElementsByClassName('toggle-button')[0]
         const navbarLinks = document.getElementsByClassName('nav-links')[0]
         const image_background = document.getElementById('bg')
+        
         toggleButton.addEventListener('click',() => {
             navbarLinks.classList.toggle('active');
             image_background.classList.toggle('active');
