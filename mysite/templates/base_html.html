@@ -11,6 +11,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
     {%block header%}
+
+    {%block header-links%}
+    {% endblock %}
+    
     <link rel="stylesheet" {% block header-pageCss %}{% endblock %}>
     <script src= "{% static 'scripts/jquery.js' %}" type = "text/javascript"></script> 
     <script src= "{% static 'scripts/menu_hamburguesa.js' %}" type = "text/javascript"></script> 
