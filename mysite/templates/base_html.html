@@ -27,7 +27,7 @@
         <button class="closebtn" onclick="closeNav()">&#10539;</button>
         <div class="overlay-content">
           <a href="#">who_is()</a>
-          <a href="#">projects()</a>
+          <a href="{% url 'projects' %}">projects()</a>
           <a href="#">Contact()</a>
           <i style="font-size:26px" class="fa"> <a href ="https://github.com/ManuData"  target="_blank" style="text-decoration:none"> &#xf09b;</i></a> 
         
@@ -37,7 +37,7 @@
       <nav class = "navBar">
         <ul>
           <li><a href="#first">who_is()</a></li>
-          <li><a href="#second">projects()</a></li>
+          <li><a href="{% url 'projects' %}">projects()</a></li>
           <li><a href="#third">Contact()</a></li>
           <li><i style="font-size:26px" class="fa"> <a href ="https://github.com/ManuData"  target="_blank" style="text-decoration:none"> &#xf09b;</i></a></li>
         </ul>
