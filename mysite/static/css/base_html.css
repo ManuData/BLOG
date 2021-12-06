@@ -5,6 +5,8 @@
 nav{
   position:sticky;
   top:0;
+  font-family: Roboto Mono,monospace;
+ 
   
 }
 
@@ -25,6 +27,9 @@ li {
 li a {
   text-decoration: none;
   color:yellow;
+  font-size: 1.2rem;
+  font-weight: bold;
+  
 }
 
 
@@ -32,6 +37,7 @@ li a {
 /*NOTA: quedarían modificar los efectos del menú*/
 
 .buttonMenu{
+
   display:none;
     
 }
@@ -56,6 +62,7 @@ li a {
   width: 100%;
   text-align: center;
   margin-top: 30px;
+  font-family: Roboto Mono,monospace;
 }
 
 .overlay a {
@@ -65,6 +72,7 @@ li a {
   color: #818181;
   display: block;
   transition: 0.3s;
+  
 }
 
 .overlay a:hover, .overlay a:focus {
@@ -84,6 +92,8 @@ li a {
     display: flex;
     position:sticky;
     top:0;
+    float:right;
+    padding-top:20px;
     
   }
 
