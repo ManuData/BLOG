@@ -5,6 +5,7 @@
 nav{
   position:sticky;
   top:0;
+  
 }
 
 ul {
@@ -83,17 +84,24 @@ li a {
     display: flex;
     
   }
-.navBar{
-  display:none
-}
 
+  .closebtn{
+    background: none;
+    border: none;
+    color:white
+  }
+  .navBar{
+  display:none
+  }
 
   .overlay a {
     font-size: 20px
+
   }
   .overlay .closebtn {
   font-size: 40px;
   top: 15px;
   right: 35px;
   }
+
 }
