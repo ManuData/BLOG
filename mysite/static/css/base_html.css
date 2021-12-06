@@ -10,6 +10,10 @@ nav{
 
 }
 
+.navBar{
+  z-index:9999;
+}
+
 ul {
   width: 100%;
   display: flex;
@@ -63,6 +67,8 @@ li a {
   text-align: center;
   margin-top: 30px;
   font-family: Roboto Mono,monospace;
+
+
 }
 
 .overlay a {
@@ -94,6 +100,7 @@ li a {
     top:0;
     float:right;
     padding-top:20px;
+    z-index:9999;
     
   }
 
@@ -107,7 +114,7 @@ li a {
   }
 
   .overlay a {
-    font-size: 20px
+    font-size: 30px
 
   }
   .overlay .closebtn {
