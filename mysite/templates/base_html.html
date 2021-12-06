@@ -22,30 +22,19 @@
 {%block background%}
     
 <body {% block background-image %}{% endblock %}> 
-    <nav class="topnav">
 
-        <a href = "#" class = "toggle-button">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </a>
-        <ul class = "nav-links">
-            <li>
-                <a href="{% url 'home' %}">who_is()</a>
-            </li>
-            <li>
-                <a href="{% url 'projects' %}">projects()</a>
-            </li>
-            <li>
-                <a href="{% url 'contact' %}">Contact()</a>
-            </li>
-            <li>
-                <i id= "git_hub_logo" class="fa"> <a href ="https://github.com/ManuData"  target="_blank"> &#xf09b;</i></a> 
-            </li>
-        </ul>
-        
-    </nav>
+    <div id="myNav" class="overlay">
+        <button class="closebtn" onclick="closeNav()">&times;</button>
+        <div class="overlay-content">
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Clients</a>
+          <a href="#">Contact</a>
+        </div>
+      </div>
+      
 
+      <span class = "buttonMenu" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
       <div>
           {%block content%}
           {%endblock%}
@@ -53,20 +42,15 @@
       </div>
 
       <script>
-        const toggleButton = document.getElementsByClassName('toggle-button')[0]
-        const navbarLinks = document.getElementsByClassName('nav-links')[0]
-        const image_background = document.getElementById('bg')
-        toggleButton.addEventListener('click',() => {
-            navbarLinks.classList.toggle('active');
-            image_background.classList.toggle('active');
-            if ($(navbarLinks).is(':visible')) {
-                $('body').addClass("fixed-position");
-            } else {
-            $('body').removeClass("fixed-position");
-            }
-        })
+        function openNav() {
+          document.getElementById("myNav").style.width = "100%";
+        }
         
-    </script> 
+        function closeNav() {
+          document.getElementById("myNav").style.width = "0%";
+        }
+        </script>
+
 </body>
 {%endblock%}
 </html>
