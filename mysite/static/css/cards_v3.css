@@ -1,4 +1,32 @@
 
+  
+  /*PARTE DEL HEADER*/
+  header{
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    font-size: 70px;
+    text-transform: uppercase;
+    display: inline-block;
+    line-height: 72px;
+    margin-bottom: 20px;
+
+}
+  
+.head{
+  text-align: center;
+  position: relative;
+
+
+}
+
+.subhead{
+  text-transform: uppercase;
+  border-bottom: 2px solid #2f2f2f;
+  border-top: 2px solid #2f2f2f;
+  padding: 12px 0 12px 0;
+
+}
+  
   /*PARTE DE LOS DIVS BOX*/
 
  /*Bloque para modificar la parte del base_html.css*/
