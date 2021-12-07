@@ -106,20 +106,21 @@
 
 
   .btn-blue{
+
     position: relative;
-    border:2px solid a;
-    color:white;
-    outline: 0;
-    border: 0;
+    border-color:black;
     background:none;
+    color:black;
+    outline: 0;
     margin:1px;
     /*padding: 5px 15px;*/
     padding:3px;
     font-size:10px;
     cursor:pointer;
     border-radius:20px;
-    background-color: blue;
     float: right;
+    margin-right:4px;
+    margin-top:8px;
   }
 
 @media only screen and (max-width:60em){
