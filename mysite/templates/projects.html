@@ -8,6 +8,9 @@
 
 <{% block header-pageCss %} href= "{% static 'css/cards_v3.css' %}" {% endblock %} >
 
+<link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900,400italic,700italic,900italic|Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+
+
 
 <!--Tags para incluir la imagen de fondo-->
 {% block background-image %} id="bg"  style="background-image: url('{% static "images/wallpaper.jpg"%}')";{% endblock %} 
@@ -20,7 +23,8 @@
       <header>PROJECTS</header>
   </div>
 
-  <div class="subhead">York, MA - Thursday August 30, 1978 - Seven Pages</div>
+  <div class="subhead"> Madrid-{{fecha_actual}} <br>Experience & Projects</div>
+    
 </div>
 
 <div class = "container">
@@ -32,7 +36,9 @@
       <img src = "{% static 'images/bmind_2.jpeg' %}" alt="Avatar" style="width:100%" class = "card-img">
       <div class="container-text">
         <h1 class = "card-header"><b> "Bmind - Madrid" </b></h1> 
-        <p class = "card-text">El viaje a Hong Kong es increíble ya que me ha podido permitir conocer nuevas</p>
+        <p class = "card-text"> BMind is new type of partner operating at the intersection of Business, 
+          Media and Data & Marketing Technology.<br><b>The result</b> BMind game changer acquired by Jakala.
+          </p>
         <button class="btn-blue">detalles</button> 
       </div>
     </div>
@@ -41,7 +47,9 @@
       <img src = "{% static 'images/knauf.jpeg' %}" alt="Avatar" style="width:100%" class = "card-img">
       <div class="container-text">
         <h1 class = "card-header"><b> "Knauf - Munich" </b></h1> 
-        <p class = "card-text">El viaje a Hong Kong es increíble ya que me ha podido permitir conocer nuevas </p> 
+        <p class = "card-text">Knauf is a synonym for gypsum – among construction experts and enthusiasts.
+          <b>With more than</b> 250 production facilities and sales organisations in over 86 countries, 35,000 employees worldwide, 
+          and sales of 10 billion Euro (in 2019).</p> 
         <button class = "btn-blue">detalles</button>
       </div>
     </div>
@@ -50,7 +58,9 @@
       <img src = "{% static 'images/vicario_socks.jpg' %}" alt="Avatar" style="width:100%" class = "card-img">
       <div class="container-text">
         <h1 class = "card-header"><b> "VicarioBrand" </b></h1> 
-        <p class = "card-text">El viaje a Hong Kong es increíble ya que me ha podido permitir conocer nuevas </p> 
+        <p class = "card-text">E-commerce project born to innovate through the core of data & tech and explore
+           and implement new ideas that generate value. The idea of the product emerged returning from my Digital master
+          degree in 2017. Achievement: Designs pattented in Europe</p> 
         <button class= "btn-blue" onclick="location.href='{% url 'project_bmind' %}'"
         > detalles </button>
       </div>

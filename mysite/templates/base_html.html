@@ -26,9 +26,9 @@
     <div id="myNav" class="overlay">
         <button class="closebtn" onclick="closeNav()">&#8339;</button>
         <div class="overlay-content">
-          <a href="{% url 'home' %}">who_is()</a>
-          <a href="{% url 'projects' %}">projects()</a>
-          <a href="{% url 'contact' %}">Contact()</a>
+          <a href="{% url 'home' %}">.who_is()</a>
+          <a href="{% url 'projects' %}">.projects()</a>
+          <a href="{% url 'contact' %}">.Contact()</a>
           <i style="font-size:26px" class="fa"> <a href ="https://github.com/ManuData"  target="_blank" style="text-decoration:none">&#xf09b;</i></a> 
         
         </div>
@@ -36,9 +36,9 @@
 
       <nav class = "navBar">
         <ul>
-          <li><a href="{% url 'home' %}">who_is()</a></li>
-          <li><a href="{% url 'projects' %}">projects()</a></li>
-          <li><a href="{% url 'contact' %}">Contact()</a></li>
+          <li><a href="{% url 'home' %}">.who_is()</a></li>
+          <li><a href="{% url 'projects' %}">.projects()</a></li>
+          <li><a href="{% url 'contact' %}">.Contact()</a></li>
           <li><i style="font-size:26px" class="fa"> <a href ="https://github.com/ManuData"  target="_blank" style="text-decoration:none"> &#xf09b;</i></a></li>
         </ul>
       </nav>
@@ -52,8 +52,6 @@
       </div>
 
       <script>
-
-
 
         function openNav() {
 
@@ -76,16 +74,23 @@
         }
         
         function closeNav() {
+
+          /*Efectos*/
+
           document.getElementById("myNav").style.width = "0%";
           $(botonMobile).css({transition:'opacity 1s ease-in-out',
                 "opacity":1})
 
+
+          /*Elimino las clases*/
           botonMobile[0].classList.remove('active');
           closeBtn[0].classList.remove('active');
         }
         </script>
 
 </body>
+
 {%endblock%}
+
 </html>
 
