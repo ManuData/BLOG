@@ -52,27 +52,36 @@
       </div>
 
       <script>
+
+
+
         function openNav() {
 
+          /*Efecto overlay*/
           document.getElementById("myNav").style.width = "100%";
+
+          /*Incorporación de clase Active en el menú mobile cuando se genera click */
           botonMobile = document.getElementsByClassName("buttonMenu");
+          botonMobile[0].classList.toggle('active');
+
+           /*Incorporación de clase Active en la "X" de cierre mobile cuando se genera click */
+          closeBtn = document.getElementsByClassName("closebtn");
+          closeBtn[0].classList.toggle('active');
+
+
+          /*Efectos*/
           $(botonMobile).css({transition:'opacity 0.5s ease-in-out',
                 "opacity":0});
-        
-        
-          $(botonClose).css({transition:'opacity 1s ease-in-out',
-                "opacity":1});
-         
-
-          /*menuMobile = document.querySelectorAll(".overlay-content a");
-          $(menuMobile).fadeIn(2000);*/
-          
+    
         }
         
         function closeNav() {
           document.getElementById("myNav").style.width = "0%";
           $(botonMobile).css({transition:'opacity 1s ease-in-out',
                 "opacity":1})
+
+          botonMobile[0].classList.remove('active');
+          closeBtn[0].classList.remove('active');
         }
         </script>
 

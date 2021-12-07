@@ -103,12 +103,31 @@ li a {
     z-index:9999;
     
   }
+  .buttonMenu.active{
+    display: flex;
+    position:sticky;
+    top:0;
+    float:right;
+    padding-top:20px;
+    pointer-events: none;
+    
+    
+  }
 
   .closebtn{
     background: none;
     border: none;
     color:white
   }
+
+  .closebtn.active{
+    background: none;
+    border: none;
+    color:white;
+    z-index:9999;
+
+  }
+
   .navBar{
   display:none
   }
@@ -118,11 +137,11 @@ li a {
 
   }
 
-
   .overlay .closebtn {
   font-size: 40px;
   top: 15px;
-  right: 30px;
+  right: 21px;
   }
+
 
 }
