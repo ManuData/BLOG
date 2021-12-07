@@ -53,11 +53,26 @@
 
       <script>
         function openNav() {
+
           document.getElementById("myNav").style.width = "100%";
+          botonMobile = document.getElementsByClassName("buttonMenu");
+          $(botonMobile).css({transition:'opacity 0.5s ease-in-out',
+                "opacity":0});
+        
+        
+          $(botonClose).css({transition:'opacity 1s ease-in-out',
+                "opacity":1});
+         
+
+          /*menuMobile = document.querySelectorAll(".overlay-content a");
+          $(menuMobile).fadeIn(2000);*/
+          
         }
         
         function closeNav() {
           document.getElementById("myNav").style.width = "0%";
+          $(botonMobile).css({transition:'opacity 1s ease-in-out',
+                "opacity":1})
         }
         </script>
 
