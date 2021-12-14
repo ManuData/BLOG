@@ -20,6 +20,17 @@ header{
 
 }
 
+li a{
+    color: black !important;
+}
+
+li a:hover{
+    color: blue !important;
+}
+
+
+
+
 p{
     margin-top: 0;
     margin-bottom: 20px;

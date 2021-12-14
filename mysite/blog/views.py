@@ -31,3 +31,4 @@ def html_article_list(request):
 #def html_article_list(request):
     #articles = Article.objects.all()
     #return render(request,'blog/article_list.html',{'articles':articles,'numbers':serie,"obj_as_json":json.dumps(obj)}) 
+
